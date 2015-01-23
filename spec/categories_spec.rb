@@ -25,7 +25,7 @@ describe(Category) do
   end
 
   describe(".find") do
-      it("will find a specific category by its id") do
+    it("will find a specific category by its id") do
       test_category = Category.new({:category_name => "car", :id => nil})
       test_category.save()
       expect(Category.find(test_category.id())).to(eq(test_category))
